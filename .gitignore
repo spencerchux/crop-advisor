@@ -1,0 +1,49 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Build and package outputs
+build/
+dist/
+*.egg-info/
+
+# Local and generated data
+data/raw/*.csv
+data/processed/*.tmp
+
+# Temporary project work
+work/
+outputs/
+
+# Generated model temporaries
+artifacts/*.tmp
+
+# Logs
+*.log
+

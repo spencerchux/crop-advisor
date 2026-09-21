@@ -1,0 +1,2 @@
+"""Crop Advisor frontend package."""
+

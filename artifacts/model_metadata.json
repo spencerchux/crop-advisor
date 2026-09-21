@@ -1,0 +1,131 @@
+{
+  "model_name": "random_forest",
+  "selection_metric": "validation_macro_f1",
+  "trained_at_utc": "2026-09-21T20:31:49.193196+00:00",
+  "features": [
+    "N",
+    "P",
+    "K",
+    "pH",
+    "rainfall",
+    "temperature"
+  ],
+  "target": "Crop",
+  "classes": [
+    "banana",
+    "barley",
+    "bittergourd",
+    "blackgram",
+    "blackpepper",
+    "bottlegourd",
+    "brinjal",
+    "cabbage",
+    "cardamom",
+    "cauliflower",
+    "coriander",
+    "cotton",
+    "cucumber",
+    "drumstick",
+    "garlic",
+    "grapes",
+    "horsegram",
+    "jackfruit",
+    "jowar",
+    "jute",
+    "ladyfinger",
+    "maize",
+    "mango",
+    "moong",
+    "onion",
+    "orange",
+    "papaya",
+    "pineapple",
+    "potato",
+    "pumpkin",
+    "radish",
+    "ragi",
+    "rapeseed",
+    "rice",
+    "soyabean",
+    "sunflower",
+    "sweetpotato",
+    "tomato",
+    "turmeric",
+    "wheat"
+  ],
+  "feature_ranges": {
+    "N": {
+      "min": 10.0,
+      "max": 180.0
+    },
+    "P": {
+      "min": 10.0,
+      "max": 125.0
+    },
+    "K": {
+      "min": 10.0,
+      "max": 200.0
+    },
+    "pH": {
+      "min": 3.82,
+      "max": 7.0
+    },
+    "rainfall": {
+      "min": 3.274569,
+      "max": 3322.06
+    },
+    "temperature": {
+      "min": 1.18,
+      "max": 35.34666667
+    }
+  },
+  "dataset": {
+    "path": "data\\processed\\crop_recommendation_clean.csv",
+    "sha256": "b21a17afa2025a060c97e36418ef25a1894fb84861c598d3d854f7ff76898f69",
+    "total_rows": 7165,
+    "split_rows": {
+      "train": 5015,
+      "validation": 1075,
+      "test": 1075,
+      "final_fit_train_plus_validation": 6090
+    }
+  },
+  "validation_results": [
+    {
+      "model": "random_forest",
+      "accuracy": 0.9079069767441861,
+      "balanced_accuracy": 0.9524331550802139,
+      "macro_f1": 0.9525273187751271
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "accuracy": 0.9097674418604651,
+      "balanced_accuracy": 0.9484835752482811,
+      "macro_f1": 0.948016304347826
+    },
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.8809302325581395,
+      "balanced_accuracy": 0.9584108251451051,
+      "macro_f1": 0.9438937465176451
+    }
+  ],
+  "held_out_test_metrics": {
+    "accuracy": 0.9079069767441861,
+    "balanced_accuracy": 0.9502431881843647,
+    "macro_f1": 0.950079624452582
+  },
+  "versions": {
+    "python": "3.12.7",
+    "scikit_learn": "1.5.1",
+    "pandas": "2.2.2",
+    "numpy": "1.26.4",
+    "joblib": "1.4.2"
+  },
+  "random_state": 42,
+  "notes": [
+    "The supplied train and test CSVs contained the same records in different orders.",
+    "Exact feature/target duplicates were removed before splitting.",
+    "Humidity and location are not model features because they are absent from the dataset."
+  ]
+}
