@@ -1,5 +1,12 @@
 # Crop Advisor
 
+## Live Demo
+
+- [Open the Crop Advisor application](https://crop-advisor-frontend.onrender.com)
+- [View the API documentation](https://crop-advisor-1.onrender.com/docs)
+
+> **Note:** The application uses Render's free hosting plan. After a period of inactivity, the services may take up to 90 seconds to wake.
+
 Crop Advisor is an end-to-end machine-learning application that recommends crops from soil nutrients and weather measurements. It includes a reproducible cleaning and EDA notebook, three-model comparison, saved scikit-learn pipeline, FastAPI service, and farmer-friendly Streamlit interface.
 
 ## What the model uses
