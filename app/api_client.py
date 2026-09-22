@@ -17,7 +17,7 @@ class CropAdvisorClient:
     """Small typed wrapper around the Crop Advisor REST API."""
 
     base_url: str
-    timeout_seconds: float = 15.0
+    timeout_seconds: float = 90.0
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "base_url", self.base_url.rstrip("/"))
