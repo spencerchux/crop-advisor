@@ -51,6 +51,19 @@ st.markdown(
             border-radius: 16px;
             padding: 1.1rem;
         }
+   [data-testid="stMain"] h2,
+        [data-testid="stMain"] h3,
+        [data-testid="stMain"] label,
+        [data-testid="stMain"] [data-testid="stCaptionContainer"] p,
+        [data-testid="stMain"] [data-testid="stWidgetLabel"] p,
+        [data-testid="stMain"] button[data-baseweb="tab"] p {
+            color: #24352b !important;
+        }
+
+        [data-testid="stMain"] button[data-baseweb="tab"][aria-selected="true"] p {
+            color: #ef5b57 !important;
+        }
+    
     </style>
     """,
     unsafe_allow_html=True,
