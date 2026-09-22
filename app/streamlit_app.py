@@ -29,6 +29,7 @@ st.markdown(
             background: linear-gradient(120deg, #174d36 0%, #2f7d4c 100%);
             margin-bottom: 1.25rem;
         }
+    .hero h1 { color: white !important; }    
         .hero h1 { margin: 0 0 0.25rem 0; font-size: 2.2rem; }
         .hero p { margin: 0; color: #e7f4e8; font-size: 1.05rem; }
         .recommendation {
